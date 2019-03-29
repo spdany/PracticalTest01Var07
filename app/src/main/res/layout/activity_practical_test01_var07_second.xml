@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest01Var07MainActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edit1"
+            android:singleLine="true"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edit1"
+            android:id="@+id/edit2"
+            android:digits="12345" />
+
+        <EditText
+            android:id="@+id/edit3"
+
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edit2"
+            />
+
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edit3"
+
+            android:clickable="true"
+            />
+
+
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sum"
+            android:layout_below="@+id/edit4"
+            />
+
+        <Button
+            android:id="@+id/product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/product"
+            android:layout_below="@+id/sum"
+            />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
